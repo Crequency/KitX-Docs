@@ -1,8 +1,17 @@
 import { defaultTheme, defineUserConfig } from 'vuepress'
+import {
+    navbarZh,
+    navbarEn,
+    sidebarZh,
+    sidebarEn,
+} from './configs/index.js'
+
+// import { containerPlugin } from '@vuepress/plugin-container'
+// import { palettePlugin } from '@vuepress/plugin-palette'
 
 export default defineUserConfig({
     lang: 'zh-CN',
-    title: 'KitX 文档',
+    title: 'KitX Docs',
     description: 'KitX 文档站点',
     //   base: '/docs/'
     locales: {
@@ -10,7 +19,7 @@ export default defineUserConfig({
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'zh-CN',
-            title: 'KitX 文档',
+            title: 'KitX Docs',
             description: 'KitX 文档站点',
         },
         '/en/': {
@@ -39,6 +48,8 @@ export default defineUserConfig({
                 openInNewWindow: '在新窗口打开',
                 toggleColorMode: '切换主题',
                 toggleSidebar: '切换侧边栏',
+                navbar: navbarZh,
+                sidebar: sidebarZh,
             },
             '/en/': {
                 selectLanguageName: 'English',
@@ -49,7 +60,20 @@ export default defineUserConfig({
                 openInNewWindow: 'Open in new window',
                 toggleColorMode: 'Toggle Color Mode',
                 toggleSidebar: 'Toggle Sidebar',
+                navbar: navbarEn,
+                sidebar: sidebarEn,
             }
-        }
-    })
+        },
+    }),
+
+    plugins: [
+        // palettePlugin({
+        //     preset: 'sass'
+        // }),
+        // containerPlugin({
+        //     type: 'center',
+        //     before: info => `<div class="custom-container-center"><div style="display: block; margin: 0 auto;">`,
+        //     after: string => '</div></div>',
+        // }),
+    ]
 })
