@@ -11,11 +11,14 @@ export const navbarEn: NavbarConfig = [
       {
         text: 'KitX',
         children: [
-          '/en/reference/ErrorCodes.md'
-          // {
-          //   text: 'CLI',
-          //   link: '/en/reference/cli.html',
-          // },
+          '/en/reference/error-codes.md',
+          {
+            text: 'Special File Formats',
+            link: '/en/reference/file-formats/README.md',
+            children: [
+              '/en/reference/file-formats/kxp.md',
+            ],
+          }
         ],
       },
     ],

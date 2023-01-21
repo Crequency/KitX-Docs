@@ -1,4 +1,10 @@
-﻿# Error Codes
+﻿---
+lang: en-US
+title: Error Codes
+description: This page briefly introduces the error codes and their definitions of KitX Dashboard
+---
+
+# Error Codes
 
 ## 1001 - StartUp Arguments Error
 Normally caused by missing necessary parameters, such as using the `--import-plugin` parameter, but you didn't pass the path of the .kxp file  
