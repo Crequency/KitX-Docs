@@ -59,7 +59,7 @@ description: 本页引导新人快速熟悉 KitX 是按照什么顺序执行的
 
 具体流程: (以某个设备的视角观察)
 
-```flow
+<!-- ```flow
 st=>start: 开始
 e=>end: 结束
 op1=>operation: 操作1|past
@@ -74,6 +74,18 @@ cond(yes, right)->c2
 cond(no)->sub1(left)->op1
 c2(yes)->io->e
 c2(no)->op2->e
+``` -->
+
+```mermaid
+graph TB
+  A(仪表盘启动) --> |初始化网络相关服务| B(观察接收到的 udp 设备报文)
+  B --> C{IsMainDevice<br>属性是否为真}
+  C --> |True| D(连接该设备<br>通过 udp 设备报文中的<br>IPv4 和 DeviceServerPort 字段)
+  C --> |False| E{是否是第 7 次<br>观察到没有主控设备}
+  E --> |True| F(自行建立主控服务器)
+  E --> |False| B
+  D --> G(继续正常流程)
+  F --> G
 ```
 
 
