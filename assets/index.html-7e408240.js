@@ -1,0 +1,1 @@
+import{_ as t,p as c,q as r,R as e,t as o}from"./framework-8cd5abc2.js";const n={},s=e("h1",{id:"project-description",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#project-description","aria-hidden":"true"},"#"),o(" Project Description")],-1),a=[s];function i(d,_){return c(),r("div",null,a)}const l=t(n,[["render",i],["__file","index.html.vue"]]);export{l as default};
