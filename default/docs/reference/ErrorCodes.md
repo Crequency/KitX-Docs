@@ -1,4 +1,4 @@
-﻿# Error Codes | 错误代码及其定义
+﻿# 错误代码及其定义
 
 ## 1001 - StartUp Arguments Error - 启动参数错误
 一般是由于缺失必要参数, 比如使用 --import-plugin 参数之后你又没有传入 .kxp 文件的路径  

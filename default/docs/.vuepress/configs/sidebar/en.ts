@@ -17,26 +17,26 @@ export const sidebarEn: SidebarConfig = {
             text: 'Reference',
             collapsible: true,
             children: [
-                
+                '/en/reference/ErrorCodes.md',
             ],
         },
-        {
-            text: 'Official Plugins Reference',
-            collapsible: true,
-            children: [
-                {
-                    text: 'Common Features',
-                    children: [
-                        '/en/reference/plugin/back-to-top.md',
-                        '/en/reference/plugin/container.md',
-                        '/en/reference/plugin/external-link-icon.md',
-                        '/en/reference/plugin/google-analytics.md',
-                        '/en/reference/plugin/medium-zoom.md',
-                        '/en/reference/plugin/nprogress.md',
-                        '/en/reference/plugin/register-components.md',
-                    ],
-                },
-            ],
-        },
+        // {
+        //     text: 'Official Plugins Reference',
+        //     collapsible: true,
+        //     children: [
+        //         {
+        //             text: 'Common Features',
+        //             children: [
+        //                 '/en/reference/plugin/back-to-top.md',
+        //                 '/en/reference/plugin/container.md',
+        //                 '/en/reference/plugin/external-link-icon.md',
+        //                 '/en/reference/plugin/google-analytics.md',
+        //                 '/en/reference/plugin/medium-zoom.md',
+        //                 '/en/reference/plugin/nprogress.md',
+        //                 '/en/reference/plugin/register-components.md',
+        //             ],
+        //         },
+        //     ],
+        // },
     ],
 }

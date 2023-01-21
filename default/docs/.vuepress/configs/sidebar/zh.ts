@@ -17,26 +17,26 @@ export const sidebarZh: SidebarConfig = {
             text: '参考',
             collapsible: true,
             children: [
-                
+                '/reference/ErrorCodes.md',
             ],
         },
-        {
-            text: '官方插件参考',
-            collapsible: true,
-            children: [
-                {
-                    text: '常用功能',
-                    children: [
-                        '/reference/plugin/back-to-top.md',
-                        '/reference/plugin/container.md',
-                        '/reference/plugin/external-link-icon.md',
-                        '/reference/plugin/google-analytics.md',
-                        '/reference/plugin/medium-zoom.md',
-                        '/reference/plugin/nprogress.md',
-                        '/reference/plugin/register-components.md',
-                    ],
-                },
-            ],
-        },
+        // {
+        //     text: '官方插件参考',
+        //     collapsible: true,
+        //     children: [
+        //         {
+        //             text: '常用功能',
+        //             children: [
+        //                 '/reference/plugin/back-to-top.md',
+        //                 '/reference/plugin/container.md',
+        //                 '/reference/plugin/external-link-icon.md',
+        //                 '/reference/plugin/google-analytics.md',
+        //                 '/reference/plugin/medium-zoom.md',
+        //                 '/reference/plugin/nprogress.md',
+        //                 '/reference/plugin/register-components.md',
+        //             ],
+        //         },
+        //     ],
+        // },
     ],
 }
