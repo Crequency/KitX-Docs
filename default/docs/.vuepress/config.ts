@@ -35,7 +35,7 @@ export default defineUserConfig({
         docsRepo: 'https://github.com/Crequency/KitX-Docs',
         docsBranch: 'main',
         docsDir: 'docs',
-        editLinkPattern: ':repo/-/edit/:branch/:path',
+        editLinkPattern: ':repo/-/edit/:branch/default/:path',
         lastUpdated: true,
         contributors: true,
         locales: {
