@@ -8,7 +8,8 @@
     "license": "MIT",
     "devDependencies": {
         "vuepress": "^2.0.0-beta.60",
-        "vuepress-plugin-components": "^2.0.0-beta.165"
+        "vuepress-plugin-components": "^2.0.0-beta.165",
+        "vuepress-plugin-md-enhance": "^2.0.0-beta.165"
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",

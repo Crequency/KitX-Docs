@@ -60,8 +60,8 @@ description: 本页引导新人快速熟悉 KitX 是按照什么顺序执行的
 具体流程: (以某个设备的视角观察)
 
 ```flow
-st=>start: 开始|past:>http://www.google.com[blank]
-e=>end: 结束|future:>http://www.google.com
+st=>start: 开始
+e=>end: 结束
 op1=>operation: 操作1|past
 op2=>operation: 操作2|current
 sub1=>subroutine: 子程序|invalid

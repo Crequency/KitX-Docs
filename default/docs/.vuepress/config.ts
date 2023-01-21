@@ -9,6 +9,8 @@ import {
 // import { containerPlugin } from '@vuepress/plugin-container'
 // import { palettePlugin } from '@vuepress/plugin-palette'
 
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'KitX Docs',
@@ -76,6 +78,9 @@ export default defineUserConfig({
         //     before: info => `<div class="custom-container-center"><div style="display: block; margin: 0 auto;">`,
         //     after: string => '</div></div>',
         // }),
+        mdEnhancePlugin({
+            flowchart: true,
+        }),
 
     ]
 })
