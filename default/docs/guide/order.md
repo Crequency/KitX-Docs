@@ -59,23 +59,6 @@ description: 本页引导新人快速熟悉 KitX 是按照什么顺序执行的
 
 具体流程: (以某个设备的视角观察)
 
-<!-- ```flow
-st=>start: 开始
-e=>end: 结束
-op1=>operation: 操作1|past
-op2=>operation: 操作2|current
-sub1=>subroutine: 子程序|invalid
-cond=>condition: 是/否?|approved:>http://www.google.com
-c2=>condition: 判断2|rejected
-io=>inputoutput: 进行反思...|future
-
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e
-``` -->
-
 ```mermaid
 graph TB
   A(仪表盘启动) --> |初始化网络相关服务| B(观察接收到的 udp 设备报文)
@@ -87,5 +70,11 @@ graph TB
   D --> G(继续正常流程)
   F --> G
 ```
+
+当然, 观察的过程不会在连接主控或是建立主控后结束
+
+这个观察的过程会持续进行, 以免发生网络内多台设备同时建立主控的情况
+
+如果观察到有其它的主控的 udp 设备报文中的 `DeviceServerBuildTime` 字段早于自己的主控服务建立时间, 则主动关闭服务器, 并重新开始观察流程
 
 

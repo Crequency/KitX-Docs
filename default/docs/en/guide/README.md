@@ -1,5 +1,8 @@
 ---
 lang: zh-CN
-title: 页面的标题
-description: 页面的描述
+title: Project Description
+description: This page will simply introduce KitX to you
 ---
+
+# Project Description
+
