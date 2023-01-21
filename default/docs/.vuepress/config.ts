@@ -67,6 +67,7 @@ export default defineUserConfig({
     }),
 
     plugins: [
+        
         // palettePlugin({
         //     preset: 'sass'
         // }),
@@ -75,5 +76,6 @@ export default defineUserConfig({
         //     before: info => `<div class="custom-container-center"><div style="display: block; margin: 0 auto;">`,
         //     after: string => '</div></div>',
         // }),
+
     ]
 })
