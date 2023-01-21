@@ -7,6 +7,8 @@ export const sidebarZh: SidebarConfig = {
             children: [
                 '/guide/README.md',
                 '/guide/getting-started.md',
+                '/guide/order.md',
+                '/guide/network-connection.md',
             ],
         },
     ],
