@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-259c62e1","path":"/en/guide/getting-started.html","title":"页面的标题","lang":"en-US","frontmatter":{"lang":"en-US","title":"页面的标题","description":"页面的描述"},"headers":[],"git":{"updatedTime":1674281310000,"contributors":[{"name":"Dynesshely","email":"catrol@qq.com","commits":1}]},"filePathRelative":"en/guide/getting-started.md"}');export{e as data};

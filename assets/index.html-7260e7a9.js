@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-e6412400","path":"/en/guide/","title":"页面的标题","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"页面的标题","description":"页面的描述"},"headers":[],"git":{"updatedTime":1674281310000,"contributors":[{"name":"Dynesshely","email":"catrol@qq.com","commits":1}]},"filePathRelative":"en/guide/README.md"}');export{e as data};
