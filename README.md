@@ -2,7 +2,9 @@
 
 This is the documentation for the KitX project. It is a work in progress, and will be updated as the project progresses.
 
-# About Deploy
+# GitHub Pages
 
-Build and deploy to GitHub Pages, please add `[Deploy]` in your latest commit message.
+You can visit docs site at [crequency.github.io/KitX-Docs/](https://crequency.github.io/KitX-Docs/).
+
+deploy branch is `gh-pages`.
 
