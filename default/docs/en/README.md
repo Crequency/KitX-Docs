@@ -5,10 +5,10 @@ heroText: KitX
 tagline: A plug-in extension platform for the Internet of Everything
 actions:
   - text: Guide
-    link: /guide/getting-started.html
+    link: /en/guide/getting-started.html
     type: primary
   - text: Project Description
-    link: /guide/
+    link: /en/guide/
     type: secondary
 features:
   - title: Elegant architecture
