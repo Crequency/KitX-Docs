@@ -23,7 +23,8 @@ File Structure:
 
 * KXP File Header
     16 Bytes
-    To prove it's a .kxp file, the value is fixed to `6E` `69` `64` `75` `6F` `6A` `69` `75` `68` `75` `69` `6C` `61` `69` `61` `3F`
+    To prove it's a .kxp file, the value is fixed to `49` `74` `20` `69` `73` `20` `61` `20` `4B` `58` `50` `20` `66` `69` `6C` `65`
+    All of the above is the ASCII code of the string "It is a KXP file"
 
 * MD5 Hash Header
     16 Bytes
