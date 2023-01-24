@@ -77,4 +77,14 @@ This process will continue to observe, in order to prevent multiple devices in t
 
 If you observe that the `DeviceServerBuildTime` field in the udp device packet of other main controls is earlier than the time when your main control service is established, you will actively close the server and restart the observation process
 
-
+## Plugin Startup Process
+1. Start Dashboard
+2. User select to start plugin A
+3. The instrument panel is based on the RootstartupFilename field in PluginStruct.json of the plug -in a and the loadErname field in LoaderStruct.json  
+   According to Loaders.installPath in config.json, the loader installation path is obtained, and LoaderName pieces can be executed to start the loader  
+   The parameter format is: `-load {file} --connect {address}: {port}` `    
+   1. `{file}` is the absolute path of the root startup file of the plugin  
+   2. `{address}` is the address connected to the current instrument panel to connect to the plugin (currently the internal network IPv4 address)  
+   3. `{port}` is the service port of the current dashboard communication server  
+4. After the Loader is started, set up a socket connection with the instrument panel. The address and port specified after the --connect parameter  
+   After the launch, Loader sends a text to the dashboard with the format: `pluginStruct: {ps}`, where `{ps}` is a JSON serialized pluginstruct object
