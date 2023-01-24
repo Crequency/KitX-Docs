@@ -9,6 +9,7 @@ export const sidebarEn: SidebarConfig = {
                 '/en/guide/getting-started.md',
                 '/en/guide/order.md',
                 '/en/guide/network-connection.md',
+                '/en/guide/package-plugin.md',
             ],
         },
     ],

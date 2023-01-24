@@ -9,6 +9,7 @@ export const sidebarZh: SidebarConfig = {
                 '/guide/getting-started.md',
                 '/guide/order.md',
                 '/guide/network-connection.md',
+                '/guide/package-plugin.md',
             ],
         },
     ],
