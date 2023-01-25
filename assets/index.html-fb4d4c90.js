@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5f434467","path":"/mobile/guide/","title":"项目简介","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"项目简介","description":"本页简单介绍 KitX Mobile 项目"},"headers":[],"git":{"updatedTime":1674636682000,"contributors":[{"name":"Dynesshely","email":"catrol@qq.com","commits":1}]},"filePathRelative":"mobile/guide/README.md"}');export{e as data};
