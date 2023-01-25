@@ -28,4 +28,13 @@ export const sidebarZh: SidebarConfig = {
             ],
         },
     ],
+    '/mobile/': [
+        {
+            text: '移动端指南',
+            children: [
+                '/mobile/guide/README.md',
+                '/mobile/guide/getting-started.md',
+            ],
+        }
+    ],
 }

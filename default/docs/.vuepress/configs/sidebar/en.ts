@@ -28,4 +28,13 @@ export const sidebarEn: SidebarConfig = {
             ],
         },
     ],
+    '/en/mobile/': [
+        {
+            text: 'Mobile Client Guide',
+            children: [
+                '/en/mobile/guide/README.md',
+                '/en/mobile/guide/getting-started.md',
+            ],
+        }
+    ],
 }

@@ -23,4 +23,20 @@ export const navbarZh: NavbarConfig = [
       },
     ],
   },
+  {
+    text: '移动端',
+    children: [
+      {
+        text: '首页',
+        link: '/mobile/README.md',
+      },
+      {
+        text: '指南',
+        children: [
+          '/mobile/guide/README.md',
+          '/mobile/guide/getting-started.md',
+        ],
+      }
+    ],
+  },
 ]

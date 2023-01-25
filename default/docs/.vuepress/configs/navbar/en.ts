@@ -23,4 +23,20 @@ export const navbarEn: NavbarConfig = [
       },
     ],
   },
+  {
+    text: 'Mobile Client',
+    children: [
+      {
+        text: 'Home',
+        link: '/en/mobile/README.md',
+      },
+      {
+        text: 'guide',
+        children: [
+          '/en/mobile/guide/README.md',
+          '/en/mobile/guide/getting-started.md',
+        ],
+      }
+    ],
+  },
 ]
