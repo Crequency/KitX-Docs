@@ -2,7 +2,7 @@
 home: true
 heroImage: https://source.catrol.cn/icons/Project/Catrol/KitX/KitX-Icon-1024x-margin-2x.png
 heroText: KitX Mobile
-tagline: 万物互联的插件扩展平台 (移动端)
+tagline: KitX 掌上控制中心
 actions:
   - text: 快速上手
     link: /mobile/guide/getting-started.html
@@ -11,11 +11,11 @@ actions:
     link: /mobile/guide/
     type: secondary
 features:
-  - title: 架构优雅
-    details: 优秀的设计使得 KitX 拥有极强的稳定性, 且易于扩展。
-  - title: 跨平台体验
-    details: 享受 .NET 带来的跨平台基础, 体验优秀的跨平台 UI 框架 Avalonia。
   - title: 万物互联
-    details: 在你的不同设备间流转数据, 搭建工作流, 就像在一台设备上一样。
+    details: 使用 KitX Mobile, 使用传感器提供更多数据, 供用户的工作流使用, 在手机即可完成 KitX 设备联动.
+  - title: 跨平台体验
+    details: 享受 Flutter 带来的跨平台基础, 体验优秀的跨平台 UI 框架 Material Design.
+#   - title: 万物互联
+#     details: 在你的不同设备间流转数据, 搭建工作流, 就像在一台设备上一样.
 ---
 

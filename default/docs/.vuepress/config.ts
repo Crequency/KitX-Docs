@@ -80,6 +80,7 @@ export default defineUserConfig({
         // }),
         mdEnhancePlugin({
             flowchart: true,
+            container: true, // 自定义容器
             mermaid: true,
         }),
 

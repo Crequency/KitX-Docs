@@ -34,6 +34,7 @@ export const sidebarZh: SidebarConfig = {
             children: [
                 '/mobile/guide/README.md',
                 '/mobile/guide/getting-started.md',
+                '/mobile/guide/packages.md',
             ],
         }
     ],
