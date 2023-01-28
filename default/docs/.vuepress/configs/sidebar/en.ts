@@ -22,6 +22,7 @@ export const sidebarEn: SidebarConfig = {
                     text: 'Special File Formats',
                     collapsible: true,
                     children: [
+                        '/en/reference/file-formats/README.md',
                         '/en/reference/file-formats/kxp.md',
                     ],
                 }

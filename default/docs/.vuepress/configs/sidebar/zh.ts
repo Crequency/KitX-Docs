@@ -22,6 +22,7 @@ export const sidebarZh: SidebarConfig = {
                     text: '专有文件格式',
                     collapsible: true,
                     children: [
+                        '/reference/file-formats/README.md',
                         '/reference/file-formats/kxp.md',
                     ],
                 }
