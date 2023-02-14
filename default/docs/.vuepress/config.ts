@@ -16,6 +16,9 @@ export default defineUserConfig({
     title: 'KitX Docs',
     description: 'KitX 文档站点',
     base: '/KitX-Docs/',
+    head: [
+        ['link', { rel: 'icon', href: 'https://source.catrol.cn/icons/Project/Catrol/KitX/KitX-Icon-128x.png' }]
+    ],
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
