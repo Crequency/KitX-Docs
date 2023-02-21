@@ -1,1 +1,0 @@
-# There is KitX Docs repository.
