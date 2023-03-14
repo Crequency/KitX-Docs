@@ -12,25 +12,31 @@ description: 本页引导新人快速熟悉 KitX 项目 -> 包括获取源码, �
 
 KitX 项目使用 Git 进行版本控制, 您可以通过以下命令获取源码:
 
+:::: code-group
+::: code-group-item shell
 ```shell
 git clone git@github.com:Crequency/KitX.git
 cd KitX
 ```
+:::
+::: code-group-item shell
+```pwsh
+# 若您未设置 SSH 密钥, 可以使用 HTTPS 方式获取源码
 
-若您未设置 SSH 密钥, 可以使用 HTTPS 方式获取源码:
-
-```shell
 git clone https://github.com/Crequency/KitX.git
 cd KitX
 ```
+:::
+::::
 
-**注意:当前的版本暂不支持使用https获取子模块，建议设置ssh密钥**
+**注意: 暂不支持通过 https 协议获取子模块, 强烈建议配置本地 git 以及 ssh 环境**
 
 ---
 
 ### 初始化子模块
 
-> 您也可以在上一步中增加 `--recurse-submodules` 参数来获取子模块从而跳过这一步
+> 您也可以在上一步的 `clone` 命令中追加 `--recurse-submodules` 参数来获取子模块从而跳过这一步, 但是使用 `start.sh` 来初始化项目仍然是必须的
+> 或者在 `clone` 命令之后, 在项目根目录执行 `git submodule update --recursive --remote` 来获取所有子模块
 
 KitX 项目使用子模块来对仓库进行拆分, 您需要在获取源码后执行以下命令来初始化子模块:
 
@@ -38,12 +44,7 @@ KitX 项目使用子模块来对仓库进行拆分, 您需要在获取源码后�
 git submodule init
 ```
 
-如果您想要更新（获取）所有子模块的话，可以运行
-```shell
-git submodule update --recursive --remote
-```
-
-来使用 KitX 的初始化工具来选择获取哪些子模块:
+使用 KitX 的初始化工具来选择获取哪些子模块并进行相关设置:
 
 :::: code-group
 ::: code-group-item Bash
