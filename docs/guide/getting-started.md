@@ -38,7 +38,7 @@ KitX 项目使用子模块来对仓库进行拆分, 您需要在获取源码后�
 git submodule init
 ```
 
-如果您想要更新（获取）所有子模块的话，可以运行，运行后可以不用再运行./ToolKits/start.sh(.ps1)
+如果您想要更新（获取）所有子模块的话，可以运行
 ```shell
 git submodule update --recursive --remote
 ```
