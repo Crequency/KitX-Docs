@@ -9,16 +9,21 @@ import {
 // import { containerPlugin } from '@vuepress/plugin-container'
 // import { palettePlugin } from '@vuepress/plugin-palette'
 
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
 
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'KitX Docs',
     description: 'KitX 文档站点',
     base: '/KitX-Docs/',
+
     head: [
-        ['link', { rel: 'icon', href: 'https://source.catrol.cn/icons/Project/Catrol/KitX/KitX-Icon-128x.png' }]
+        [
+            'link',
+            { rel: 'icon', href: 'https://img.catrol.cn/icons/projects/kitx/KitX-Icon-128x.png' }
+        ]
     ],
+
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -35,14 +40,15 @@ export default defineUserConfig({
     },
 
     theme: defaultTheme({
-        logo: 'https://source.catrol.cn/icons/Project/Catrol/KitX/KitX-Icon-1024x-margin-2x.png',
-        repo: 'https://github.com/Crequency/KitX',
-        docsRepo: 'https://github.com/Crequency/KitX-Docs',
+        logo: 'https://img.catrol.cn/icons/projects/kitx/KitX-Icon-1024x-margin-2x.png',
+        repo: 'https://github.com/Crequency/KitX/',
+        docsRepo: 'https://github.com/Crequency/KitX-Docs/',
         docsBranch: 'main',
         docsDir: 'docs',
         editLinkPattern: ':repo/edit/:branch/:path',
         lastUpdated: true,
         contributors: true,
+
         locales: {
             '/': {
                 selectLanguageName: '简体中文',
@@ -76,11 +82,13 @@ export default defineUserConfig({
         // palettePlugin({
         //     preset: 'sass'
         // }),
+        //
         // containerPlugin({
         //     type: 'center',
         //     before: info => `<div class="custom-container-center"><div style="display: block; margin: 0 auto;">`,
         //     after: string => '</div></div>',
         // }),
+
         mdEnhancePlugin({
             flowchart: true,
             container: true, // 自定义容器
