@@ -1,15 +1,15 @@
 {
-    "name": "KitX.Docs",
-    "version": "1.0.0",
+    "name": "kitx-docs",
+    "version": "23.03.21.0",
     "description": "Docs of KitX",
     "main": "index.js",
     "repository": "git@github.com:Crequency/KitX-Docs.git",
     "author": "Dynesshely <catrol@qq.com>",
     "license": "MIT",
     "devDependencies": {
-        "vuepress": "^2.0.0-beta.60",
-        "vuepress-plugin-components": "^2.0.0-beta.165",
-        "vuepress-plugin-md-enhance": "^2.0.0-beta.165"
+        "vuepress": "^2.0.0-beta.61",
+        "vuepress-plugin-components": "^2.0.0-beta.196",
+        "vuepress-plugin-md-enhance": "^2.0.0-beta.196"
     },
     "scripts": {
         "docs:dev": "vuepress dev docs",
