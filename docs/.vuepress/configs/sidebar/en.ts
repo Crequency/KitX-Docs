@@ -1,15 +1,15 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarEn: SidebarConfig = {
-    '/en/guide/': [
+    '/en/client/guide/': [
         {
             text: 'Guide',
             children: [
-                '/en/guide/README.md',
-                '/en/guide/getting-started.md',
-                '/en/guide/order.md',
-                '/en/guide/network-connection.md',
-                '/en/guide/package-plugin.md',
+                '/en/client/guide/README.md',
+                '/en/client/guide/getting-started.md',
+                '/en/client/guide/order.md',
+                '/en/client/guide/network-connection.md',
+                '/en/client/guide/package-plugin.md',
             ],
         },
     ],
@@ -29,12 +29,13 @@ export const sidebarEn: SidebarConfig = {
             ],
         },
     ],
-    '/en/mobile/': [
+    '/en/mobile/guide/': [
         {
-            text: 'Mobile Client Guide',
+            text: 'Mobile Guide',
             children: [
                 '/en/mobile/guide/README.md',
                 '/en/mobile/guide/getting-started.md',
+                '/en/mobile/guide/packages.md',
             ],
         }
     ],
