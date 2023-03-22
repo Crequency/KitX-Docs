@@ -18,9 +18,9 @@ const L = (props, _) => h(
         h(
             'td',
             [
-                props.v,
-                h("br"),
-                h("a", {href: pub_url + props.n}, h("img", {src: icon_url+props.n + "?label="}))
+                // props.v,
+                // h("br"),
+                h("a", {href: pub_url + props.n}, h("img", {src: icon_url + props.n + "?label=", alt: props.v}))
             ]
         ),
         h('td', props.u),
@@ -33,33 +33,52 @@ const L = (props, _) => h(
 
 ## 通用 Packages 列表
 
-<table>
-<thead><tr><th>名称</th><th>版本</th><th>用途</th><th>备注</th></tr></thead>
-<tbody>
-<L n="get" v="^4.6.5" u="更好的国际化, 路由, ..." />
-<L n="network_info_plus" v="^2.1.4+1" u="获取网络信息" m="由于新版 targetSDK 限制, 最高 2.1.4+1" />
-<L n="device_info_plus" v="^8.0.0" u="获取设备信息" />
-<L n="flutter_logs" v="^2.1.7" u="日志" />
-<L n="sms_receiver" v="^0.4.1" u="短信接收" m="未启用" />
-<L n="permission_handler" v="^8.1.4+2" u="权限管理" m="未启用" />
-<L n="mac_address" v="^1.0.0" u="获取 MAC" />
-<L n="community_material_icon" v="^5.9.55" u="由社区贡献的 Material Design 图标" />
-<L n="flutter_blue_plus" v="^1.4.0" u="蓝牙支持" />
-<L n="sensors_plus" v="^2.0.1" u="传感器支持" />
-<L n="vibration" v="^1.7.6" u="手机震动支持" />
-<L n="battery_plus" v="^3.0.2" u="获取电池数据" m="未启用" />
-<L n="built_value" v="^8.4.3" u="JSON 序列化支持" />
-<L n="built_collection" v="^5.1.1" u="JSON 序列化支持" />
-</tbody>
+<table style="width: 100%; display: table;">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>版本</th>
+            <th>用途</th>
+            <th>备注</th>
+        </tr>
+    </thead>
+    <tbody>
+        <L n="get" v="^4.6.5" u="更好的国际化, 路由, ..." />
+        <L n="network_info_plus" v="^3.0.2" u="获取网络信息" />
+        <L n="device_info_plus" v="^8.0.0" u="获取设备信息" />
+        <L n="flutter_logs" v="^2.1.7" u="日志" m="已弃用" />
+        <L n="sms_receiver" v="^0.4.1" u="短信接收" m="未启用" />
+        <L n="permission_handler" v="^10.2.0" u="权限管理" m="未使用" />
+        <L n="mac_address" v="^1.0.0" u="获取 MAC 地址" m="不支持 iOS 平台" />
+        <L n="community_material_icon" v="^5.9.55" u="由社区贡献的 Material Design 图标" />
+        <L n="flutter_blue_plus" v="^1.4.0" u="蓝牙支持" />
+        <L n="sensors_plus" v="^2.0.1" u="传感器支持" />
+        <L n="vibration" v="^1.7.6" u="手机震动支持" m="未使用" />
+        <L n="battery_plus" v="^3.0.2" u="获取电池数据" m="未启用" />
+        <L n="built_value" v="^8.4.3" u="JSON 序列化支持" />
+        <L n="built_collection" v="^5.1.1" u="JSON 序列化支持" />
+        <L n="package_info_plus" v="^3.0.3" u="获取包信息" />
+        <L n="url_launcher" v="^6.1.10" u="启动链接等链接相关支持" />
+        <L n="f_logs" v="^2.0.1" u="日志支持" />
+        <L n="shared_preferences" v="^2.0.18" u="提供对 Shared Preferences 访问的支持" />
+        <!-- <L n="" v="" u="" /> -->
+    </tbody>
 </table>
 
 ## 开发 Packages 列表
 
-<table>
-<thead><tr><th>名称</th><th>版本</th><th>用途</th><th>备注</th></tr></thead>
-<tbody>
-<L n="build_runner" v="^2.3.3" u="Build 工具" m="built_value 依赖" />
-<L n="flutter_gen" v="^5.1.0" u="生成工具" m="build_runner 依赖" />
-<L n="built_value_generator" v="^8.4.2" u="生成工具" m="built_value 依赖" />
-</tbody>
+<table style="width: 100%; display: table;">
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>版本</th>
+            <th>用途</th>
+            <th>备注</th>
+        </tr>
+    </thead>
+    <tbody>
+        <L n="build_runner" v="^2.3.3" u="Build 工具" m="built_value 依赖" />
+        <L n="flutter_gen" v="^5.1.0" u="生成工具" m="build_runner 依赖" />
+        <L n="built_value_generator" v="^8.4.2" u="生成工具" m="built_value 依赖" />
+    </tbody>
 </table>
