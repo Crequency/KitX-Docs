@@ -12,22 +12,13 @@ description: 本页引导新人快速熟悉 KitX 项目 -> 包括获取源码, �
 
 KitX 项目使用 Git 进行版本控制, 您可以通过以下命令获取源码:
 
-:::: code-group
-::: code-group-item shell
 ```shell
 git clone git@github.com:Crequency/KitX.git
 cd KitX
-```
-:::
-::: code-group-item shell
-```pwsh
-# 若您未设置 SSH 密钥, 可以使用 HTTPS 方式获取源码
 
-git clone https://github.com/Crequency/KitX.git
-cd KitX
+# 若您未设置 SSH 密钥, 可以使用 HTTPS 方式获取源码
+# 此时, git clone 命令的链接请换成 https://github.com/Crequency/KitX.git
 ```
-:::
-::::
 
 **注意: 暂不支持通过 https 协议获取子模块, 强烈建议配置本地 git 以及 ssh 环境**
 
@@ -79,7 +70,7 @@ git submodule init
 
 ### 编译前准备
 
-1. 您需要安装 dotnet 6 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/6.0) 下载并安装  
+1. 您需要安装 dotnet 6 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/6.0) 下载并安装
    安装成功的标志是: 成功运行命令 `dotnet --list-sdks` 并且列出了 dotnet 6 SDK 的版本号
 
 ---
@@ -122,15 +113,15 @@ dotnet run
 
 ### 其它构建方式
 
-您也可以使用一些 IDE 来构建项目  
+您也可以使用一些 IDE 来构建项目
 例如:
 - Visual Studio (推荐 2019 以上的版本, 目前建议使用 2022 版本)
 - Jetbrains Rider
 
-其中, 您可以在 Visual Studio 中右键解决方案资源管理器中的项目, 选择 `发布`, 然后选择发布配置文件来进行发布  
+其中, 您可以在 Visual Studio 中右键解决方案资源管理器中的项目, 选择 `发布`, 然后选择发布配置文件来进行发布
 您也可以在 Rider 中使用类似的操作来进行发布
 
-或者, 您也可以配置编辑器来简化构建步骤  
+或者, 您也可以配置编辑器来简化构建步骤
 例如:
 - Visual Studio Code
 - Vim
