@@ -52,7 +52,7 @@ git submodule init
 
 其中 `<type>` 为开发类型, 可选值为:
 
-`dashboard` | `mobile` | `loader` | `plugin` | `installer` | `reference`
+`list` | `dashboard` | `mobile` | `loader` | `plugin` | `installer` | `reference`
 
 若您想要开发 KitX PC 端客户端, 请 start `dashboard` 和 `reference`
 
@@ -63,6 +63,8 @@ git submodule init
 若您想要开发插件, 请 start `loader` 和 `plugin`
 
 若您想要开发 KitX 安装包, 请 start `installer`
+
+您也可以随时 start `list` 来列出可供选择的开发类型
 
 ---
 

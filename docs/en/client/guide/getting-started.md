@@ -65,13 +65,15 @@ If you want to develop KitX Plugins, please start `loader` and `plugin`
 
 If you want to develop KitX Installer, please start `installer`
 
+And you can always run `list` to list available types
+
 ---
 
 ## Build Project
 
 ### Preparations before build
 
-1. You need to install dotnet 6 SDK, please go to [dotnet official website](https://dotnet.microsoft.com/download/dotnet/6.0) to download and install  
+1. You need to install dotnet 6 SDK, please go to [dotnet official website](https://dotnet.microsoft.com/download/dotnet/6.0) to download and install
    The sign of successful installation is: successfully run command `dotnet --list-sdks` and list dotnet 6 SDK version
 
 ---
@@ -114,15 +116,15 @@ dotnet run
 
 ### Other Build Methods
 
-You can also use some IDE to build the project  
+You can also use some IDE to build the project
 For example:
 - Visual Studio (Recommended version: 2019 or above, currently recommended version: 2022)
 - Jetbrains Rider
 
-In Visual Studio, you can right-click the project in the solution explorer, and select `Publish`, then select the publish profile to publish  
+In Visual Studio, you can right-click the project in the solution explorer, and select `Publish`, then select the publish profile to publish
 You can also use similar operations in Rider to publish
 
-Or, you can also configure your editor to simplify the build process  
+Or, you can also configure your editor to simplify the build process
 For example:
 - Visual Studio Code
 - Vim
