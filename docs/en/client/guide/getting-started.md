@@ -75,6 +75,8 @@ And you can always run `list` to list available types
 
 1. You need to install dotnet 6 SDK, please go to [dotnet official website](https://dotnet.microsoft.com/download/dotnet/6.0) to download and install
    The sign of successful installation is: successfully run command `dotnet --list-sdks` and list dotnet 6 SDK version
+2. You need to install dotnet 6 SDK, please go to [dotnet official website](https://dotnet.microsoft.com/download/dotnet/7.0) to download and install
+   The way to check if installation is successful is the same as above, part of projects use dotnet 7 while others use dotnet 6
 
 ---
 

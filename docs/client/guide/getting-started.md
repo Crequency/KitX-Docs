@@ -74,6 +74,8 @@ git submodule init
 
 1. 您需要安装 dotnet 6 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/6.0) 下载并安装
    安装成功的标志是: 成功运行命令 `dotnet --list-sdks` 并且列出了 dotnet 6 SDK 的版本号
+2. 您需要安装 dotnet 7 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/7.0) 下载并安装
+   安装是否成功的检测方法同上, 部分项目已经升级至 dotnet 7, 其余项目仍然使用 dotnet 6
 
 ---
 
