@@ -4,6 +4,10 @@ export const sidebarZh: SidebarConfig = {
     '/rules/': [
         {
             text: '规则',
+            children: [
+                '/rules/README.md',
+                '/rules/loader.md',
+            ],
         }
     ],
     '/client/guide/': [
