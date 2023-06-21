@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-da6e2b5e","path":"/rules/","title":"规则","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1687319765000,"contributors":[{"name":"Dynesshely","email":"catrol@qq.com","commits":1}]},"filePathRelative":"rules/README.md"}');export{e as data};
