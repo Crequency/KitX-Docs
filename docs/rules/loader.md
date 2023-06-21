@@ -60,12 +60,16 @@ myPath = loader.GetWorkPath();
 
 ## 加载器与仪表盘的通信规则
 
-用户启动插件:
+### 通信方式
+
+TCP Socket 通信, Loader 为客户端, Dashboard 为服务端
+
+### 用户启动插件
 
 1. 仪表盘执行 Shell: `loader --load <path> --connect <ip>:<port>`
 2. loader 启动
 
-Loader 启动:
+### Loader 启动
 
 1. 根据 `--load` 参数获取插件跟启动文件
 2. 插件框架启动
@@ -75,7 +79,11 @@ Loader 启动:
    其中, `<WorkPath>` 是一个路径, 插件应该在这个路径下存放配置文件以及临时数据等
 5. 自由通信开始
 
-自由通信阶段:
+### 自由通信阶段
 
 仪表盘与加载器之间现在可以双向通信, 通信内容必须是 `Command` 类的 Json 序列化文本
+
+### 离线
+
+当 Loader 一方因任意原因断开 TCP Socket 连接, Dashboard 都会认为插件离线
 
