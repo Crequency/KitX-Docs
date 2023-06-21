@@ -2,6 +2,10 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const navbarZh: NavbarConfig = [
     {
+        text: '规则',
+        link: '/rules/',
+    },
+    {
         text: '指南',
         children: [
             {

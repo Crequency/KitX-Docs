@@ -1,6 +1,11 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebarZh: SidebarConfig = {
+    '/rules/': [
+        {
+            text: '规则',
+        }
+    ],
     '/client/guide/': [
         {
             text: '指南',
