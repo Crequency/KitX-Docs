@@ -6,6 +6,7 @@ export const sidebarZh: SidebarConfig = {
             text: '规则',
             children: [
                 '/rules/README.md',
+                '/rules/installer.md',
                 '/rules/loader.md',
             ],
         }
