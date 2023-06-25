@@ -14,7 +14,13 @@ KitX Installer 中的安装包项目主要负责 KitX Dashboard 的安装.
 
 按照各个编译目标 profile 存储
 
-例如:
+常见组合是 平台 + 架构 + 限定选项
+
+平台包括: win, linux, osx
+架构包括: x86, x64, arm, arm64
+限定选项有: -single, -cut, -runtime-relied
+
+组合值例如:
 
 - kitx-win-x86
 - kitx-win-x64-single
@@ -23,12 +29,6 @@ KitX Installer 中的安装包项目主要负责 KitX Dashboard 的安装.
 - kitx-linux-arm64-single
 - kitx-linux-arm64-single-cut
 - kitx-osx-arm64-single
-
-等, 常见组合是 平台 + 架构 + 限定选项
-
-平台包括: win, linux, osx
-架构包括: x86, x64, arm, arm64
-限定选项有: -single, -cut, -runtime-relied
 
 URL 前缀 (设想): https://source.catrol.cn/kitx/dashboard/%version%/%profile%.zip
 
@@ -50,14 +50,16 @@ https://source.catrol.cn/kitx/installer/%version%/%profile%
 
 新的安装包使用 Rust + Egui 的方式编写
 
-我们在程序内编写了两个常量字符串 version 和 profile (实际名称请看源码, 此处仅作原理讲解)
-其中, version 字符串的长度为 20, profile 的长度为 50
+我们在程序内编写了两个常量字符串 version 和 profile
+其中, version 和 profile 字符串的长度均为 60
 默认值分别为:
 
 ```text
-version: "$$_!_%Version%_@_$$"
-profile: "$$_!_%Profile%_@_$$"
+version: "$$_!_%Version%_@_$$<spaces>#"
+profile: "$$_!_%Profile%_@_$$<spaces>#"
 ```
+
+其中 `<spaces>` 是补齐长度的空格, 共计 40 个
 
 程序运行时根据这两个字符串拼接 URL
 
@@ -92,16 +94,8 @@ profile: "$$_!_%Profile%_@_$$"
 
 ### GNU/Linux
 
-
-
-
-
+building ...
 
 ### MacOS
 
-
-
-
-
-
-
+building ...
