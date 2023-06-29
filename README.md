@@ -1,6 +1,20 @@
-# Hello, KitX-Docs
+# About
 
-This is the documentation for the KitX project. It is a work in progress, and will be updated as the project progresses.
+This is the documentation site source codes for KitX Project.
+
+It is a work in progress, and will be updated as the project progresses.
+
+# Build
+
+Docs site built with vuepress v2, so may be you need go to [vuepress v2 docs site](https://v2.vuepress.vuejs.org/) for more help.
+
+```shell
+# Run this to install and fetch dependencies
+yarn install
+
+# Run this to start development
+yarn docs:dev
+```
 
 # GitHub Pages
 
