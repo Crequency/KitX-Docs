@@ -7,7 +7,15 @@ export const sidebarZh: SidebarConfig = {
             children: [
                 '/rules/README.md',
                 '/rules/installer.md',
-                '/rules/loader.md',
+                {
+                    text: '加载器',
+                    children: [
+                        '/rules/loader/README.md',
+                        '/rules/loader/rule.md',
+                        '/rules/loader/self_loader/README.md',
+                        '/rules/loader/active_loader/README.md'
+                    ],
+                }
             ],
         }
     ],
