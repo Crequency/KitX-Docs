@@ -1,10 +1,10 @@
 ---
 lang: zh-CN
-title: 通信规则
-description: 加载器与 KitX 仪表板的通信规则
+title: 执行流程
+description: 加载器的执行流程以及与 KitX 仪表板的通信规则
 ---
 
-# 通信规则
+# 执行流程
 
 ## 通信方式
 

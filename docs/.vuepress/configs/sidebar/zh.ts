@@ -10,10 +10,10 @@ export const sidebarZh: SidebarConfig = {
                 {
                     text: '加载器',
                     children: [
-                        '/rules/loader/README.md',
-                        '/rules/loader/rule.md',
-                        '/rules/loader/self_loader/README.md',
-                        '/rules/loader/active_loader/README.md'
+                        '/rules/loader.md',
+                        '/rules/loader/active-loader.md',
+                        '/rules/loader/self-loader.md',
+                        '/rules/loader/process.md',
                     ],
                 }
             ],

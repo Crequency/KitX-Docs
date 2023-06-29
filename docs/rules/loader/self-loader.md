@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 自加载器
-description: 这篇文章是 KitX Project 自加载器 部分的概览导读
+description: 被动加载器的作用, 组成, 以及实现方式
 ---
 
 ## 概述
@@ -13,9 +13,4 @@ description: 这篇文章是 KitX Project 自加载器 部分的概览导读
 自加载器一般是一个库，库中封装了各种与 KitX Dashboard 通信的代码
 
 插件需要使用该库, 并在启动时调用自加载器与 KitX Dashboard 的连接
-
-
-## 加载器标准
-
-以下是正在开发，或者已经完成的加载器的标准文档
 
