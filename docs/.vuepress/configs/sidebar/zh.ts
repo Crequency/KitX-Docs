@@ -9,6 +9,7 @@ export const sidebarZh: SidebarConfig = {
                 '/rules/installer.md',
                 {
                     text: '加载器',
+                    collapsible: true,
                     children: [
                         '/rules/loader.md',
                         '/rules/loader/active-loader.md',
@@ -31,6 +32,16 @@ export const sidebarZh: SidebarConfig = {
             ],
         },
     ],
+    '/mobile/guide/': [
+        {
+            text: '移动端指南',
+            children: [
+                '/mobile/guide/README.md',
+                '/mobile/guide/getting-started.md',
+                '/mobile/guide/packages.md',
+            ],
+        }
+    ],
     '/reference/': [
         {
             text: '参考',
@@ -46,15 +57,5 @@ export const sidebarZh: SidebarConfig = {
                 }
             ],
         },
-    ],
-    '/mobile/guide/': [
-        {
-            text: '移动端指南',
-            children: [
-                '/mobile/guide/README.md',
-                '/mobile/guide/getting-started.md',
-                '/mobile/guide/packages.md',
-            ],
-        }
     ],
 }
