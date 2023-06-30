@@ -7,7 +7,16 @@ export const sidebarZh: SidebarConfig = {
             children: [
                 '/rules/README.md',
                 '/rules/installer.md',
-                '/rules/loader.md',
+                {
+                    text: '加载器',
+                    collapsible: true,
+                    children: [
+                        '/rules/loader.md',
+                        '/rules/loader/active-loader.md',
+                        '/rules/loader/self-loader.md',
+                        '/rules/loader/process.md',
+                    ],
+                }
             ],
         }
     ],
@@ -22,6 +31,16 @@ export const sidebarZh: SidebarConfig = {
                 '/client/guide/package-plugin.md',
             ],
         },
+    ],
+    '/mobile/guide/': [
+        {
+            text: '移动端指南',
+            children: [
+                '/mobile/guide/README.md',
+                '/mobile/guide/getting-started.md',
+                '/mobile/guide/packages.md',
+            ],
+        }
     ],
     '/reference/': [
         {
@@ -38,15 +57,5 @@ export const sidebarZh: SidebarConfig = {
                 }
             ],
         },
-    ],
-    '/mobile/guide/': [
-        {
-            text: '移动端指南',
-            children: [
-                '/mobile/guide/README.md',
-                '/mobile/guide/getting-started.md',
-                '/mobile/guide/packages.md',
-            ],
-        }
     ],
 }

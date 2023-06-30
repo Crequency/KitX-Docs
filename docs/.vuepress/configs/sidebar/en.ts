@@ -18,6 +18,16 @@ export const sidebarEn: SidebarConfig = {
             ],
         },
     ],
+    '/en/mobile/guide/': [
+        {
+            text: 'Mobile Guide',
+            children: [
+                '/en/mobile/guide/README.md',
+                '/en/mobile/guide/getting-started.md',
+                '/en/mobile/guide/packages.md',
+            ],
+        }
+    ],
     '/en/reference/': [
         {
             text: 'Reference',
@@ -33,15 +43,5 @@ export const sidebarEn: SidebarConfig = {
                 }
             ],
         },
-    ],
-    '/en/mobile/guide/': [
-        {
-            text: 'Mobile Guide',
-            children: [
-                '/en/mobile/guide/README.md',
-                '/en/mobile/guide/getting-started.md',
-                '/en/mobile/guide/packages.md',
-            ],
-        }
     ],
 }
