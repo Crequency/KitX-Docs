@@ -11,7 +11,7 @@ export const sidebarZh: SidebarConfig = {
                     text: '加载器',
                     collapsible: true,
                     children: [
-                        '/rules/loader.md',
+                        '/rules/loader/README.md',
                         '/rules/loader/active-loader.md',
                         '/rules/loader/self-loader.md',
                         '/rules/loader/process.md',
