@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-c0b3c136","path":"/en/rules/","title":"Rules","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1688104097000,"contributors":[{"name":"ChenPi11","email":"102936596+ChenPi11@users.noreply.github.com","commits":1}]},"filePathRelative":"en/rules/README.md"}');export{e as data};
