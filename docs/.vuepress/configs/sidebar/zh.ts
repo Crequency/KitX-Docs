@@ -15,6 +15,13 @@ export const sidebarZh: SidebarConfig = {
                         '/rules/loader/active-loader.md',
                         '/rules/loader/self-loader.md',
                         '/rules/loader/process.md',
+                        {
+                            text: '加载器列表',
+                            collapsible: true,
+                            children: [
+                                '/rules/loader/items/loader-csharp.md',
+                            ]
+                        }
                     ],
                 }
             ],
