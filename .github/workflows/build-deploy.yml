@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  deploy-gh-pages:
+  build-and-deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,6 +36,7 @@ jobs:
           cd ..
 
       - name: Deploy Docs
+        if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # Branch where docs deploy to
@@ -43,11 +44,12 @@ jobs:
           folder: docs/.vuepress/dist
 
       - name: Zip Build
+        if: github.event_name != 'pull_request'
         run: zip -r docs.zip ./docs/.vuepress/dist
 
       - name: Create Release and Upload Release Asset
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+        if: github.event_name != 'pull_request' and startsWith(github.ref, 'refs/tags/')
         with:
           tag_name: ${{ github.ref }}
           name: Release ${{ github.ref }}
