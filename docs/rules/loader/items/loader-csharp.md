@@ -31,3 +31,22 @@ description: 关于适用于 C# 的 Loader 的设计思路与技术细节
 - `CommunicationManager.cs`: 通讯管理器, 负责处理与 KitX Dashboard 的通讯
 - `PluginManager.cs`: 插件管理器, 调度 KitX Plugin 的生命周期
 
+### 执行流程
+
+1. 处理命令行启动参数
+   1. 得到 KitX Dashboard 插件服务器地址
+      1. 随即实例化 `CommunicationManager` 并开始 TCP 通讯
+   2. 得到插件跟启动文件路径
+      1. 随即实例化 `PluginManager.cs`
+      2. 传入发送信息的回调函数
+      3. 加载插件 (通过 MEF 框架)
+         1. 从插件实现了 `IIdentityInterface` 接口的类中整理 `PluginStruct` 实例
+         2. 向仪表盘发送 Json 序列化的 `PluginStruct`, 格式: "PluginStruct: `content`"
+         3. 获取插件实现了 `IController` 接口的类实例 `controller`
+         4. 调用 `controller.SetRootPath` 向插件传入插件文件所在路径
+         5. 调用 `controller.SetSendCommandAction` 向插件传入发送 `Command` 的回调函数
+         6. 调用 `controller.Start` 开始插件生命周期
+
+
+
+
