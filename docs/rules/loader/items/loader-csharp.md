@@ -6,7 +6,7 @@ description: 关于适用于 C# 的 Loader 的设计思路与技术细节
 
 # 适用于 C# 的 Loader
 
-获取 [源代码](https://github.com/Crequency/KitX-Loaders/tree/main/KitX.Loader.CSharp) .
+查看 [源代码](https://github.com/Crequency/KitX-Loaders/tree/main/KitX.Loader.CSharp) .
 
 ## 设计思路
 
@@ -16,7 +16,11 @@ description: 关于适用于 C# 的 Loader 的设计思路与技术细节
 2. csharp 是基于虚拟机和 CIL 的语言, 易于实现主动加载器
 3. csharp 有成熟的接口和反射机制
 
-实际设计:
+设计:
+
+插件实现特定接口, 加载器通过 MEF 框架加载插件之后, 通过特定接口获取插件信息并进行调度
+
+## 实际设计
 
 ### 文件组成
 
@@ -46,7 +50,3 @@ description: 关于适用于 C# 的 Loader 的设计思路与技术细节
          4. 调用 `controller.SetRootPath` 向插件传入插件文件所在路径
          5. 调用 `controller.SetSendCommandAction` 向插件传入发送 `Command` 的回调函数
          6. 调用 `controller.Start` 开始插件生命周期
-
-
-
-
