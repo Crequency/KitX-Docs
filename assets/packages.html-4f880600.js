@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-21805305","path":"/mobile/guide/packages.html","title":"包列表","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"包列表","description":"本页列出了 KitX Mobile 依赖的第三方包"},"headers":[],"git":{"updatedTime":1688899877000,"contributors":[{"name":"调皮豆干","email":"catrol@qq.com","commits":1}]},"filePathRelative":"mobile/guide/packages.md"}');export{e as data};
