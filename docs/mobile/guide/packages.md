@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
-title: 依赖列表
-description: 本页列出了 KitX Mobile 的第三方依赖
+title: 包列表
+description: 本页列出了 KitX Mobile 依赖的第三方包
 ---
 
 <script setup>
@@ -32,7 +32,7 @@ const L = (props, _) => h(
 )
 </script>
 
-# 依赖列表
+# 包列表
 
 <!--Warn: Below contents are auto generated, don't touch it !-->
 <!--Begin PackagesTable-->
