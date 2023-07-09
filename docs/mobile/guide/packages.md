@@ -34,9 +34,6 @@ const L = (props, _) => h(
 
 # 包列表
 
-<!--Warn: Below contents are auto generated, don't touch it !-->
-<!--Begin PackagesTable-->
-
 <table style="width: 100%; display: table;">
     <thead>
         <tr>
@@ -46,6 +43,8 @@ const L = (props, _) => h(
         </tr>
     </thead>
     <tbody>
+        <!--Warn: Below contents are auto generated, don't touch it !-->
+        <!--Begin PackagesTable-->
         <L n="badges" v="^3.1.1" u="A package for creating badges. Badges can be used for an additional marker for any widget, e.g. show a number of items in a shopping cart." />
         <L n="battery_plus" v="^4.0.1" u="Flutter plugin for accessing information about the battery state(full, charging, discharging)." />
         <L n="built_collection" v="^5.1.1" u="Immutable collections based on the SDK collections. Each SDK collection class is split into a new immutable collection class and a corresponding mutable builder class." />
@@ -67,7 +66,6 @@ const L = (props, _) => h(
         <L n="sliding_up_panel" v="^2.0.0+1" u="A draggable Flutter widget that makes implementing a SlidingUpPanel much easier!" />
         <L n="url_launcher" v="^6.1.11" u="Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes." />
         <L n="vibration" v="^1.8.1" u="A plugin for handling Vibration API on iOS, Android, and web." />
+        <!--End PackagesTable-->
     </tbody>
 </table>
-
-<!--End PackagesTable-->
