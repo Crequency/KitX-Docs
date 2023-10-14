@@ -93,6 +93,8 @@ export default defineUserConfig({
             flowchart: true,
             container: true, // 自定义容器
             mermaid: true,
+            chart: true,
+            echarts: true,
         }),
 
     ]

@@ -6,6 +6,16 @@ export const sidebarZh: SidebarConfig = {
             text: '规则',
             children: [
                 '/rules/README.md',
+                {
+                    text: '总体架构',
+                    collapsible: true,
+                    children: [
+                        '/rules/entire/README.md',
+                        '/rules/entire/kitx-network.md',
+                        '/rules/entire/kitx-plugin-load.md',
+                        '/rules/entire/kitx-encryption-ring.md',
+                    ]
+                },
                 '/rules/installer.md',
                 {
                     text: '加载器',
