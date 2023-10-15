@@ -52,7 +52,7 @@ git submodule init
 
 其中 `<type>` 为开发类型, 可选值为:
 
-`list` | `dashboard` | `mobile` | `loader` | `plugin` | `installer` | `reference`
+`list` | `dashboard` | `mobile` | `loader` | `plugin` | `installer` | `reference` | `all`
 
 若您想要开发 KitX PC 端客户端, 请 start `dashboard` 和 `reference`
 
@@ -66,16 +66,16 @@ git submodule init
 
 您也可以随时 start `list` 来列出可供选择的开发类型
 
+或者 start `all` 来更新所有子模块
+
 ---
 
 ## 构建项目
 
 ### 编译前准备
 
-1. 您需要安装 dotnet 6 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/6.0) 下载并安装
-   安装成功的标志是: 成功运行命令 `dotnet --list-sdks` 并且列出了 dotnet 6 SDK 的版本号
-2. 您需要安装 dotnet 7 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/7.0) 下载并安装
-   安装是否成功的检测方法同上, 部分项目已经升级至 dotnet 7, 其余项目仍然使用 dotnet 6
+1. 您需要安装 dotnet 7 SDK, 请前往 [dotnet 官网](https://dotnet.microsoft.com/download/dotnet/7.0) 下载并安装
+   安装成功的标志是: 成功运行命令 `dotnet --list-sdks` 并且列出了 dotnet 7 SDK 的版本号
 
 ---
 

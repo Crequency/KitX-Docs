@@ -16,6 +16,14 @@ export const sidebarZh: SidebarConfig = {
                         '/rules/entire/kitx-encryption-ring.md',
                     ]
                 },
+                {
+                    text: '网络',
+                    collapsible: true,
+                    children: [
+                        '/rules/network/README.md',
+                        '/rules/network/kitx-web-command.md',
+                    ]
+                },
                 '/rules/installer.md',
                 {
                     text: '加载器',
