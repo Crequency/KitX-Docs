@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e2ccd166","path":"/rules/entire/","title":"KitX 总体架构","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"KitX 总体架构","description":"本分类包含 KitX 的总体架构"},"headers":[],"git":{"updatedTime":1700475787000,"contributors":[{"name":"Dynesshely","email":"catrol@qq.com","commits":1}]},"filePathRelative":"rules/entire/README.md"}');export{e as data};
