@@ -15,7 +15,7 @@ export default defineUserConfig({
     lang: 'zh-CN',
     title: 'KitX Docs',
     description: 'KitX 文档站点',
-    base: '/KitX-Docs/',
+    base: '/',
 
     head: [
         [
