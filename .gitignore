@@ -1,7 +1,12 @@
+## Platform Ignore
+*.DS_Store
+
+## NodeJS Ignore
 node_modules
 .temp
 .cache
 
+## Project Ignore
 docs/.vuepress/dist/
 
 yarn-error.log
