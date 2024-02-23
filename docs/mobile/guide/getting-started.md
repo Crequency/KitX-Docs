@@ -37,22 +37,35 @@ git clone git@github.com:Crequency/KitX-Mobile.git
 
 2. 在 `cmdline-tools\<version>\bin` 目录运行以下命令
    ```shell
-   sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.1"
+   sdkmanager "platforms;android-34" "build-tools;34.0.0" "platform-tools"
    ```
 
 3. 检查您的 SDK 目录是否大致为下
    ```
    path/to/android/sdk
    ├─build-tools
-   │  └─33.0.1
+   │  └─34.0.0
    ├─cmdline-tools
    │  └─latest
    │      ├─bin
    │      └─lib
    ├─platform-tools
    └─platforms
-      └─android-33
+      └─android-34
     ```
+
+4. 您可能需要手动指定 Android SDK 路径
+   ```shell
+   flutter config --android-sdk "path/to/android/sdk"
+   ```
+
+5. 同意许可证
+   ```shell
+   flutter doctor --android-licenses
+   ```
+
+6. 检查环境
+   参照 [检测环境](#检测环境)
 :::
 
 
@@ -73,10 +86,11 @@ set FLUTTER_STORAGE_BASE_URL=https://mirror.sjtu.edu.cn
 
 #### 检测环境
 
-运行 `flutter doctor -v` 命令, 检查以下项目是否通过 (`[✓]` `[!]` 均可)
+运行 `flutter doctor -v` 命令, 检查以下项目是否通过 (`[✓]` 标识)
 
-- Flutter
-- Android toolchain - develop for Android devices
+- `Flutter`
+- `Android toolchain - develop for Android devices`  *(若为 Android 平台开发)*
+- `Xcode - develop for iOS and macOS`                *(若为 iOS 平台开发)*
 
 #### 获取 Packages
 
