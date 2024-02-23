@@ -21,6 +21,7 @@ export const sidebarZh: SidebarConfig = {
                     collapsible: true,
                     children: [
                         '/rules/network/README.md',
+                        '/rules/network/kitx-dashboard-network.md',
                         '/rules/network/kitx-web-command.md',
                     ]
                 },

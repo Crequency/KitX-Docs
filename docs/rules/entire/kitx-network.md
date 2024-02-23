@@ -26,6 +26,12 @@ graph TB
 
 如图所示，KitX 网络由主控、从控和插件组成。
 
-主控从控均为 KitX 客户端，且主从控之间使用 KWC 协议进行通信。
+主控从控均为 KitX 客户端，且主从控之间使用 KWC 报文协议进行通信。
 
-客户与插件（主要是 Loader）之间也使用 KWC 协议进行通信。
+客户与插件（主要是 Loader）之间也使用 KWC 报文协议进行通信。
+
+> 其中: Dashboard <-> Loaders 之间的通信使用 WebSocket 信道
+>
+> 而, Dashboard <-> Dashboard 之间的通信使用 Http 信道
+
+详细内容请看[网络](../network/README.md)部分
