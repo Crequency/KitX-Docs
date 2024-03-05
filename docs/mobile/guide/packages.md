@@ -53,7 +53,7 @@ const L = (props, _) => h(
         <L n="crypto" v="^3.0.3" u="Implementations of SHA, MD5, and HMAC cryptographic functions." />
         <L n="device_info_plus" v="^9.1.1" u="Flutter plugin providing detailed information about the device (make, model, etc.), and Android or iOS version the app is running on." />
         <L n="f_logs" v="^2.0.1" u="FLog provides quick &amp; simple logging solution. All logs are saved to the DB which can then be exported in files." />
-        <L n="flutter" v="^3.0.0" u="Visit flutter.io to get started." />
+        <L n="flutter" v="^3.3.0" u="Visit flutter.io to get started." />
         <L n="flutter_blue_plus" v="^1.31.15" u="Flutter plugin for connecting and communicationg with Bluetooth Low Energy devices, on Android, iOS, and MacOS." />
         <L n="flutter_chat_ui" v="^1.6.12" u="Actively maintained, community-driven chat UI implementation with an optional Firebase BaaS.
 " />
@@ -65,7 +65,7 @@ const L = (props, _) => h(
         <L n="sensors_plus" v="^4.0.2" u="Flutter plugin for accessing accelerometer, gyroscope, and magnetometer sensors." />
         <L n="shared_preferences" v="^2.2.2" u="Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android." />
         <L n="sliding_up_panel" v="^2.0.0+1" u="A draggable Flutter widget that makes implementing a SlidingUpPanel much easier!" />
-        <L n="url_launcher" v="^6.2.4" u="Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes." />
+        <L n="url_launcher" v="^6.2.5" u="Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes." />
         <L n="vibration" v="^1.8.4" u="A plugin for handling Vibration API on iOS, Android, and web." />
         <L n="wakelock_plus" v="^1.1.4" u="Plugin that allows you to keep the device screen awake, i.e. prevent the screen from sleeping on Android, iOS, macOS, Windows, Linux, and web." />
         <!--End PackagesTable-->

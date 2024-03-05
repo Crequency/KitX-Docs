@@ -36,35 +36,6 @@ description: 这篇文章是有关 KitX Dashboard 网络
 >
 > 报文协议: [KWC](kitx-web-command.md)
 
-暴露如下 APIs
+在本地访问 `http://localhost:<devicesServerPort>/swagger` 可以打开 Swagger
 
-### /Device
-
-- `[GET]` /
-  - `[FromQuery]` Token // 访问令牌
-  - 获取设备信息
-- `[POST]` /ExchangeKey
-  - `[FromQuery]` Key // 密钥
-  - `[FromQuery]` KeyId // 密钥标识
-  - `[FromQuery]` DecryptionVerifyCode // 密钥解密验证码
-  - 发起密钥交换流程
-- `[POST]` /ExchangeKeyBack
-  - `[FromQuery]` Key // 本机密钥
-  - `[FromQuery]` KeyId // 密钥标识
-  - 返回本机密钥 (由被调用 /ExchangeKey 的设备向发起方调用该 API 来完成密钥交换过程)
-- `[POST]` /Swap
-  - `[FromQuery]` Token // 访问令牌
-  - // ToDo
-  - 移交主控 (由主控向从控发起)
-- `[GET]` /Connect
-  - `[FromQuery]` KeyId // 密钥标识
-  - `[FromQuery]` VerifyCode // 验证码
-  - `[FromQuery]` VerifyAnwser // 验证答案
-  - `[FromQuery]` GivenToken // 加密的 Client Token
-  - Host 根据 KeyId 使用对应的 Key 解密 VerifyCode, 若结果与 VerifyAnwser 一致, 则身份验证通过, 解密并存储 Client Token, 返回 Host Token
-
-### /Plugin
-
-- `[GET]` /Request
-  - `[FromQuery]` Token // 访问令牌
-  - `[FromQuery]` Request // 请求报文 ([KWC](kitx-web-command.md) 格式)
+在线 Api 文档我们正在开发, 请稍安勿躁 ~
