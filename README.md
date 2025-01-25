@@ -10,10 +10,10 @@ Docs site built with vuepress v2, so may be you need go to [vuepress v2 docs sit
 
 ```shell
 # Run this to install and fetch dependencies
-yarn install
+pnpm install
 
 # Run this to start development
-yarn docs:dev
+pnpm docs:dev
 ```
 
 # GitHub Pages
