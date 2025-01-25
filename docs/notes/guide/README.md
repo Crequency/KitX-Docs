@@ -3,7 +3,7 @@ lang: zh-CN
 title: 项目简介
 description: 本页简单介绍 KitX 项目
 createTime: 2023/10/15 19:06:56
-permalink: /guide/
+
 ---
 
 # 项目简介

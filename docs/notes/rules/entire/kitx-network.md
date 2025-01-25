@@ -3,7 +3,7 @@ lang: zh-CN
 title: KitX 网络
 description: 本页有关 KitX 网络的组成结构
 createTime: 2023/10/15 19:06:56
-permalink: /article/2od5it3m/
+
 ---
 
 # KitX 网络架构

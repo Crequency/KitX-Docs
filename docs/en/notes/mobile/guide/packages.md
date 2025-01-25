@@ -3,7 +3,7 @@ lang: zh-CN
 title: Packages Lists
 description: This page lists packages used by KitX Mobile
 createTime: 2025/01/25 11:25:05
-permalink: /en/article/ue1fxgzy/
+
 ---
 
 <script setup>

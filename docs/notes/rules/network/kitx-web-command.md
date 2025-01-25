@@ -3,7 +3,7 @@ lang: zh-CN
 title: KWC 网络通讯协议
 description: 这篇文章是有关 KWC 网络通讯协议
 createTime: 2023/10/15 19:06:56
-permalink: /article/6fvxqdkk/
+
 ---
 
 # 什么是 KWC

@@ -3,7 +3,7 @@ lang: zh-CN
 title: 加载器概述
 description: 关于 KitX Project 中加载器的导读与概述
 createTime: 2023/07/27 00:25:50
-permalink: /rules/xs8pfzrn/
+
 ---
 
 # 加载器概述

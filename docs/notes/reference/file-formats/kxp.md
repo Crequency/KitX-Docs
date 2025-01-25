@@ -3,7 +3,7 @@ lang: zh-CN
 title: KXP 文件格式详解
 description: 本页详细解释了 KitX 的专有文件格式 .kxp (KitX Extensions Package)
 createTime: 2023/07/27 00:25:50
-permalink: /article/0pmomayu/
+
 ---
 
 # .kxp 格式

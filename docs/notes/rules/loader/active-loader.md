@@ -3,7 +3,7 @@ lang: zh-CN
 title: 主动加载器
 description: 主动加载器的作用, 组成, 以及实现方式
 createTime: 2023/07/27 00:25:50
-permalink: /article/er40kvy3/
+
 ---
 
 # 主动加载器

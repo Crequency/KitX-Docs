@@ -3,7 +3,7 @@ lang: zh-CN
 title: 安装包
 description: 本篇文章介绍安装包的核心组成
 createTime: 2023/07/27 00:25:50
-permalink: /article/xa4oq24w/
+
 ---
 
 # 安装包

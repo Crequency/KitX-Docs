@@ -3,7 +3,7 @@ lang: zh-CN
 title: KitX Dashboard 网络
 description: 这篇文章是有关 KitX Dashboard 网络
 createTime: 2024/02/19 11:12:25
-permalink: /article/ss4uokw5/
+
 ---
 
 # KitX Dashboard 网络

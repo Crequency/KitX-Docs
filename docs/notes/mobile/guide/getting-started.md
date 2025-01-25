@@ -3,7 +3,7 @@ lang: zh-CN
 title: 快速上手
 description: 本页引导新人快速熟悉 KitX Mobile 项目 -> 包括获取源码, 第一次编译等 ...
 createTime: 2023/07/27 00:25:50
-permalink: /article/bkmdlntp/
+
 ---
 
 # 快速上手
@@ -34,7 +34,7 @@ git clone git@github.com:Crequency/KitX-Mobile.git
 但由于其官网不完善, 所以本教程会交您使用 Android SDK 命令行工具 提供 Android 平台支持
 
 1. 安装 Android SDK 命令行工具
-   
+
    在 [此处](https://developer.android.com/studio#command-tools) 下载安装包, 并参照 [此处](https://developer.android.com/studio/command-line/sdkmanager?hl=zh-cn) 完成安装
 
 2. 在 `cmdline-tools\<version>\bin` 目录运行以下命令
@@ -66,7 +66,7 @@ set PUB_HOSTED_URL=https://mirror.sjtu.edu.cn/dart-pub
 set FLUTTER_STORAGE_BASE_URL=https://mirror.sjtu.edu.cn
 ```
 
-若要设置全局镜像, 请设置环境变量, 例如: 
+若要设置全局镜像, 请设置环境变量, 例如:
 
 - 设置环境变量  `PUB_HOSTED_URL` 的值为 `https://mirror.sjtu.edu.cn/dart-pub`
 
@@ -144,11 +144,11 @@ TODO
 
 ### 其它构建方式
 
-您也可以使用一些 IDE 来构建项目  
+您也可以使用一些 IDE 来构建项目
 例如:
 - Android Studio
 
-或者, 您也可以配置编辑器来简化构建步骤  
+或者, 您也可以配置编辑器来简化构建步骤
 例如:
 - Visual Studio Code
 - Vim

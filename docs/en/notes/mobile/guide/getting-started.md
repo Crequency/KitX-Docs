@@ -3,7 +3,7 @@ lang: en-US
 title: Get Started
 description: This page will lead you to get started with KitX Mobile
 createTime: 2025/01/25 11:25:05
-permalink: /en/article/i0j8yxyc/
+
 ---
 
 # Get Started
@@ -36,11 +36,11 @@ git clone git@github.com:Crequency/KitX-Mobile.git
 
 ### Other Build Methods
 
-You can also use some IDE to build the project  
+You can also use some IDE to build the project
 For example:
 - Android Studio
 
-Or, you can also configure your editor to simplify the build process  
+Or, you can also configure your editor to simplify the build process
 For example:
 - Visual Studio Code
 - Vim

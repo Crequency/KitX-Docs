@@ -3,7 +3,7 @@ lang: zh-CN
 title: 快速上手
 description: 本页引导新人快速熟悉 KitX 项目 -> 包括获取源码, 第一次编译等 ...
 createTime: 2025/01/25 11:24:47
-permalink: /article/ks6xxrs8/
+
 ---
 
 # 快速上手

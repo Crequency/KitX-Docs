@@ -3,7 +3,7 @@ lang: zh-CN
 title: KitX 加载器
 description: 本页有关 KitX 加载器的原理示意
 createTime: 2023/10/15 19:06:56
-permalink: /article/bu67fqnu/
+
 ---
 
 # KitX 加载器原理示意

@@ -3,7 +3,7 @@ lang: zh-CN
 title: 执行流程
 description: 加载器的执行流程以及与 KitX 仪表板的通信规则
 createTime: 2023/07/27 00:25:50
-permalink: /article/q5mdzfy1/
+
 ---
 
 # 执行流程

@@ -3,7 +3,7 @@ lang: zh-CN
 title: 运行流程
 description: 本页引导新人快速熟悉 KitX 是按照什么顺序执行的
 createTime: 2025/01/25 11:24:47
-permalink: /article/59iko1t3/
+
 ---
 
 # 运行流程
@@ -46,10 +46,10 @@ permalink: /article/59iko1t3/
 
     #endregion
   ```
-  这个任务将在 `MainWindow.xaml.cs` 中 `InitWindow()` 函数执行完毕时 `Raise`  
-  并且休眠 `Program.Config.Web.DelayStartSeconds` 秒数后再开始启动网络相关服务  
+  这个任务将在 `MainWindow.xaml.cs` 中 `InitWindow()` 函数执行完毕时 `Raise`
+  并且休眠 `Program.Config.Web.DelayStartSeconds` 秒数后再开始启动网络相关服务
 - `WebManager.Start()` 方法将分别初始化 `DevicesManager` , `DevicesServer` , `PluginsManager` 和 `PluginsServer`
-- `DevicesServer` 在调用 `Start()` 方法后开始向局域网多播本机的设备信息 udp 包, 表现形式为 `DeviceInfoStruct` 的 json 序列化字符串 (该结构定义于 `KitX.Web.Rules` 中)  
+- `DevicesServer` 在调用 `Start()` 方法后开始向局域网多播本机的设备信息 udp 包, 表现形式为 `DeviceInfoStruct` 的 json 序列化字符串 (该结构定义于 `KitX.Web.Rules` 中)
   同时也会监听来自局域网组播的 udp 包, 并将其解析为 `DeviceInfoStruct` 结构, 并通过 `DevicesManager.Update(DeviceInfoStruct)` 方法将其添加到界面中
 - `PluginsServer` 在调用 `Start()` 方法后开始监听网络连接请求并同请求的插件建立 tcp 连接, 接收到以 `"PluginStruct: "` 打头的报文之后将剩余部分作为 json 字符串反序列化为 `PluginStruct` 结构, 并通过 `PluginsManager.Execute(string, IPEndPoint)` 方法将其添加到界面中
 
@@ -83,12 +83,12 @@ graph TB
 ## 插件启动流程
 1. 启动仪表盘
 2. 用户选择启动插件A
-3. 仪表盘根据插件A的 PluginStruct.json 中的 RootStartupFileName 字段以及 LoaderStruct.json 中的 LoaderName 字段拼凑启动命令  
-   根据 Config.json 中 Loaders.InstallPath 得到加载器安装路径, LoaderName 拼凑可执行文件名称来启动 Loader  
-   传入参数格式为: `--load {file} --connect {address}:{port}`  
-   其中,  
-   1. `{file}` 为插件根启动文件的绝对路径  
-   2. `{address}` 为当前仪表盘与插件连接的地址 (目前为内网 IPv4 地址)  
-   3. `{port}` 为当前仪表盘通讯服务器的服务端口  
-4. Loader 启动后与仪表盘建立 Socket 连接, 通过 --connect 参数后指定的地址与端口  
+3. 仪表盘根据插件A的 PluginStruct.json 中的 RootStartupFileName 字段以及 LoaderStruct.json 中的 LoaderName 字段拼凑启动命令
+   根据 Config.json 中 Loaders.InstallPath 得到加载器安装路径, LoaderName 拼凑可执行文件名称来启动 Loader
+   传入参数格式为: `--load {file} --connect {address}:{port}`
+   其中,
+   1. `{file}` 为插件根启动文件的绝对路径
+   2. `{address}` 为当前仪表盘与插件连接的地址 (目前为内网 IPv4 地址)
+   3. `{port}` 为当前仪表盘通讯服务器的服务端口
+4. Loader 启动后与仪表盘建立 Socket 连接, 通过 --connect 参数后指定的地址与端口
    启动后 Loader 向仪表盘发送一个文本, 格式为: `PluginStruct: {ps}`, 其中 `{ps}` 为 json 序列化的 PluginStruct 对象

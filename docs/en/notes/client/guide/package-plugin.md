@@ -3,7 +3,7 @@ lang: en-US
 title: Package and Publish Plugin
 description: This page describes in detail how to package a plugin and publish the plugin to the KitX plugin market
 createTime: 2025/01/25 11:25:05
-permalink: /en/article/t47xdh85/
+
 ---
 
 # Package Plugin

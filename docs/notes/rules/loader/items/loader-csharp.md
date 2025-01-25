@@ -3,7 +3,7 @@ lang: zh-CN
 title: 适用于 C# 的 Loader
 description: 关于适用于 C# 的 Loader 的设计思路与技术细节
 createTime: 2023/07/27 00:25:50
-permalink: /article/rethgvok/
+
 ---
 
 # 适用于 C# 的 Loader

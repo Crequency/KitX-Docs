@@ -3,7 +3,7 @@ lang: en-US
 title: KXP File Format
 description: This page explains the special file formats of KitX .kxp (KitX Extensions Package)
 createTime: 2025/01/25 11:25:05
-permalink: /en/article/qhaki89e/
+
 ---
 
 # .kxp file format

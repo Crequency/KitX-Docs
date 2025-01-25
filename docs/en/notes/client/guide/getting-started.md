@@ -3,7 +3,7 @@ lang: en-US
 title: Get Started
 description: This page will lead you to get started with KitX
 createTime: 2025/01/25 11:25:05
-permalink: /en/article/jr39slad/
+
 ---
 
 # Get Started

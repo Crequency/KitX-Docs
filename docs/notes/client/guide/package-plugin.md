@@ -3,7 +3,7 @@ lang: zh-CN
 title: 打包和发布插件
 description: 本页详细讲述如何打包一个插件并将插件发布到 KitX 插件市场
 createTime: 2025/01/25 11:24:47
-permalink: /article/bxmml7ph/
+
 ---
 
 # 打包插件

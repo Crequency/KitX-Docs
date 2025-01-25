@@ -3,7 +3,7 @@ lang: zh-CN
 title: 包列表
 description: 本页列出了 KitX Mobile 依赖的第三方包
 createTime: 2023/07/27 00:25:50
-permalink: /article/65f47mca/
+
 ---
 
 <script setup>
