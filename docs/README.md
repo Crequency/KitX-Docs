@@ -12,15 +12,15 @@ config:
             actions:
                 -
                     text: 项目简介
-                    link: /notes/guide/
+                    link: /guide/
                     theme: brand
                 -
                     text: 快速上手 (桌面端)
-                    link: /notes/client/guide/getting-started.html
+                    link: /client/guide/getting-started.html
                     theme: alt
                 -
                     text: 快速上手 (移动端)
-                    link: /notes/mobile/guide/getting-started.html
+                    link: /mobile/guide/getting-started.html
                     theme: alt
     -
         type: features

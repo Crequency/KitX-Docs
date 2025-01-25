@@ -1,13 +1,14 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { NavItem } from 'vuepress-theme-plume'
+import { languagesNavItems } from './languages.ts'
 
-export const navbarZh: NavbarConfig = [
+export const navbarZh: NavItem[] = [
     {
         text: '规则',
         link: '/rules/',
     },
     {
         text: '指南',
-        children: [
+        items: [
             {
                 text: '桌面端',
                 link: '/client/guide/',
@@ -20,20 +21,21 @@ export const navbarZh: NavbarConfig = [
     },
     {
         text: '参考',
-        children: [
+        prefix: '/reference/',
+        items: [
             {
                 text: 'KitX 仪表盘 (桌面端)',
-                children: [
-                    '/reference/error-codes.md',
-                    {
-                        text: '专有文件格式',
-                        link: '/reference/file-formats/README.md',
-                        children: [
-                            '/reference/file-formats/kxp.md',
-                        ],
-                    }
+                items: [
+                    'error-codes.md',
+                    'file-formats/README.md',
+                    'file-formats/kxp.md',
                 ],
             },
         ],
     },
+    {
+        text: '语言',
+        icon: 'material-symbols:translate',
+        items: languagesNavItems,
+    }
 ]

@@ -1,15 +1,16 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
+import type { NavItem } from 'vuepress-theme-plume'
+import { languagesNavItems } from './languages.ts'
 
-export const navbarEn: NavbarConfig = [
+export const navbarEn: NavItem[] = [
     {
         text: 'Rules',
         link: '/en/rules/',
     },
     {
         text: 'Guide',
-        children: [
+        items: [
             {
-                text: 'Dashboard',
+                text: 'Desktop',
                 link: '/en/client/guide/',
             },
             {
@@ -20,20 +21,21 @@ export const navbarEn: NavbarConfig = [
     },
     {
         text: 'Reference',
-        children: [
+        prefix: '/en/reference/',
+        items: [
             {
                 text: 'KitX Dashboard (Desktop)',
-                children: [
-                    '/en/reference/error-codes.md',
-                    {
-                        text: 'Special File Formats',
-                        link: '/en/reference/file-formats/README.md',
-                        children: [
-                            '/en/reference/file-formats/kxp.md',
-                        ],
-                    }
+                items: [
+                    'error-codes.md',
+                    'file-formats/README.md',
+                    'file-formats/kxp.md',
                 ],
             },
         ],
     },
+    {
+        text: 'Language',
+        icon: 'material-symbols:translate',
+        items: languagesNavItems,
+    }
 ]
