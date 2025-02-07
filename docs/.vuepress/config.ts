@@ -49,19 +49,28 @@ export default defineUserConfig({
 
         locales: {
             '/': {
+                selectLanguageName: '简体中文',
+                sidebarMenuLabel: '目录',
                 navbar: navbarZh,
-                sidebar: sidebarZh
+                sidebar: sidebarZh,
             },
             '/en/': {
+                selectLanguageName: 'English',
+                sidebarMenuLabel: 'Menu',
+                editLinkText: 'Edit this page on GitHub',
+                contributorsText: 'Contributors',
+                changelogText: 'Changelog',
+                changelogOnText: 'On',
+                changelogButtonText: 'View Full Changelog',
                 navbar: navbarEn,
                 sidebar: sidebarEn,
             }
         },
 
         autoFrontmatter: {
-            permalink: false, // 是否生成永久链接
-            createTime: true, // 是否生成创建时间
-            title: true, // 是否生成标题
+            permalink: false,
+            createTime: true,
+            title: true,
         },
 
         plugins: {
@@ -78,7 +87,6 @@ export default defineUserConfig({
     plugins: [
         mdEnhancePlugin({
             flowchart: true,
-            // container: true, // 自定义容器
             mermaid: true,
             chartjs: true,
             echarts: true,

@@ -1,5 +1,4 @@
 import type { NavItem } from 'vuepress-theme-plume'
-import { languagesNavItems } from './languages.ts'
 
 export const navbarZh: NavItem[] = [
     {
@@ -32,10 +31,5 @@ export const navbarZh: NavItem[] = [
                 ],
             },
         ],
-    },
-    {
-        text: '语言',
-        icon: 'material-symbols:translate',
-        items: languagesNavItems,
     }
 ]
