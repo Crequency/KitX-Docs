@@ -62,5 +62,5 @@ File Structure:
 
 All of the above, the file map part indicates the length of each file name, file body, and records the file structure, which is convenient for the decoder to decode, and each file map item corresponds to a file item
 
-* [Encoder Source Code](https://github.com/Crequency/KitX-File-Formats/blob/main/KitX.File.Format.KXP/Encoder.cs)
-* [Decoder Source Code](https://github.com/Crequency/KitX-File-Formats/blob/main/KitX.File.Format.KXP/Decoder.cs)
+* [Encoder Source Code](https://github.com/Crequency-Cassations/KitX-File-Formats/blob/main/KitX.Formats.KXP/Encoder.cs)
+* [Decoder Source Code](https://github.com/Crequency-Cassations/KitX-File-Formats/blob/main/KitX.Formats.KXP/Decoder.cs)

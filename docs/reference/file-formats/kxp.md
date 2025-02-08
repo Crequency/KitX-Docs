@@ -62,5 +62,5 @@ createTime: 2023/07/27 00:25:50
 
 其中, 文件地图部分标明了每个文件名, 文件体的长度, 同时记录了文件结构, 方便解码器进行解码, 每个文件地图项都一一对应一个文件项
 
-* [编码器源码](https://github.com/Crequency/KitX-File-Formats/blob/main/KitX.File.Format.KXP/Encoder.cs)
-* [解码器源码](https://github.com/Crequency/KitX-File-Formats/blob/main/KitX.File.Format.KXP/Decoder.cs)
+* [编码器源码](https://github.com/Crequency-Cassations/KitX-File-Formats/blob/main/KitX.Formats.KXP/Encoder.cs)
+* [解码器源码](https://github.com/Crequency-Cassations/KitX-File-Formats/blob/main/KitX.Formats.KXP/Decoder.cs)

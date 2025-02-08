@@ -6,19 +6,15 @@ createTime: 2023/07/27 00:25:50
 
 ---
 
-# 快速上手
-
 ## 获取源码
 
-您可参照 [KitX 快速上手](/guide/getting-started.md) 克隆主仓库后 start `mobile`, 后续在 `KitX Mobile` 文件夹中开发
+您可参照 [KitX 快速上手](/guide/getting-started.md) 克隆主仓库, 后续在 `KitX Clients/KitX Mobile` 文件夹中开发
 
 或是直接 clone `KitX Mobile` 仓库
 
 ```shell
 git clone git@github.com:Crequency/KitX-Mobile.git
 ```
-
----
 
 ## 构建项目
 
@@ -29,9 +25,10 @@ git clone git@github.com:Crequency/KitX-Mobile.git
 您可参照 [官方文档](https://flutter.cn/docs/get-started/install)
 
 ::: details 不使用 Android Studio 全量安装提供 Android 平台支持
-您没有必要安装 Android Studio 全量安装提供 Android 平台支持, 您可以选择其他编辑器, 例如: VSCode
 
-但由于其官网不完善, 所以本教程会交您使用 Android SDK 命令行工具 提供 Android 平台支持
+您没有必要安装 Android Studio 全量安装提供 Android 平台支持, 您可以选择其他编辑器, 例如: Visual Studio Code
+
+但由于其官网不完善, 所以本教程会教您使用 Android SDK 命令行工具 提供 Android 平台支持
 
 1. 安装 Android SDK 命令行工具
 
@@ -42,7 +39,7 @@ git clone git@github.com:Crequency/KitX-Mobile.git
    sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.1"
    ```
 
-3. 检查您的 SDK 目录是否大致为下
+3. 检查您的 SDK 目录是否大致如下
    ```
    path/to/android/sdk
    ├─build-tools
@@ -55,10 +52,13 @@ git clone git@github.com:Crequency/KitX-Mobile.git
    └─platforms
       └─android-33
     ```
+
 :::
 
-
 ::: details 在 Windows 环境为 Flutter 设定镜像配置
+
+如果您无法科学上网, 可以使用镜像加速下载, 例如: 上海交通大学的镜像
+
 您可以使用 `set` 命令为当前命令行窗口设定 Flutter 镜像
 
 ```
@@ -69,8 +69,8 @@ set FLUTTER_STORAGE_BASE_URL=https://mirror.sjtu.edu.cn
 若要设置全局镜像, 请设置环境变量, 例如:
 
 - 设置环境变量  `PUB_HOSTED_URL` 的值为 `https://mirror.sjtu.edu.cn/dart-pub`
-
 - 设置环境变量 `FLUTTER_STORAGE_BASE_URL` 的值为 `https://mirror.sjtu.edu.cn`
+
 :::
 
 #### 检测环境
@@ -82,7 +82,7 @@ set FLUTTER_STORAGE_BASE_URL=https://mirror.sjtu.edu.cn
 
 #### 获取 Packages
 
-切换目录到 `kitx_mobile`, 然后运行 `flutter pub get` 即可
+切换目录到 `KitX Clients/KitX Mobile/kitx_mobile`, 然后运行 `flutter pub get` 即可
 
 ::: tip
 对 `pubspec.yaml` 做出任何更改以后, 均要重新获取 Packages

@@ -8,7 +8,7 @@ createTime: 2023/07/27 00:25:50
 
 # Project Description
 
-Kitx Project aims to create a cross-platform and scalable toolbox, so that the electronic devices are no longer split, the computing power is shared, and everyone can enjoy the fun of technology.
+KitX Project aims to create a cross-platform and scalable toolbox, so that the electronic devices are no longer split, the computing power is shared, and everyone can enjoy the fun of technology.
 
 # Project Composition
 
@@ -24,6 +24,7 @@ To end users
 - [KitX Mobile](https://github.com/Crequency/KitX-Mobile) is the specific implementation of KitX Project on the mobile terminal, which can be run on `Android`, `iOS` devices.
 
   Due to the low authority of the mobile terminal, the mobile terminal cannot perform extensive function expansion, but users can use mobile to manage devices and call the function on the remote device.
+  In addition, the mobile terminal will also integrate some common plug-in functions, these plug-in functions will be updated with the main software
   Of course, the mobile terminal can also expand the function through the `Mini App` and other forms, similar to the `WeChat Mini App`
 
   The mobile project is based on the `Flutter` to realize the cross-platform graphic interface, and use `dart` as the main development language.

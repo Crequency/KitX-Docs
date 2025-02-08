@@ -8,7 +8,7 @@ createTime: 2023/07/27 00:25:50
 
 # 专有文件格式目录
 
-| Normal extension | Full name               | Link             |
-|------------------|-------------------------|------------------|
-| .kxp             | KitX Extensions Package | [kxp.md](kxp.md) |
+| Normal extension | Full name               | Version | Link             |
+|------------------|-------------------------|---------|------------------|
+| .kxp             | KitX Extensions Package | v1      | [kxp.md](kxp.md) |
 
