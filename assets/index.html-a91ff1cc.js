@@ -1,1 +1,0 @@
-import{_ as t,p as s,q as n,R as e,t as a}from"./framework-a7aa02af.js";const o={},r=e("h1",{id:"rules",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#rules","aria-hidden":"true"},"#"),a(" Rules")],-1),c=e("p",null,"Developing ...",-1),_=[r,c];function d(l,i){return s(),n("div",null,_)}const u=t(o,[["render",d],["__file","index.html.vue"]]);export{u as default};
